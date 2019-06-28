@@ -1,5 +1,5 @@
 const {getUserById, getPostsForUser} = require('./api.js');
-const posts = require('./data');
+//const posts = require('./data');
 showPostsForCurrentUser = (userId, cb) => {
   getPostsForUser(userId, posts => {
     const postTemplates = posts.map(post => {
